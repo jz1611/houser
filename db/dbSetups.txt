@@ -1,0 +1,20 @@
+CREATE TABLE properties(
+    property_id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    description TEXT NOT NULL,
+    address TEXT NOT NULL,
+    city TEXT NOT NULL,
+    state TEXT NOT NULL,
+    zip TEXT NOT NULL,
+    img_url TEXT NOT NULL,
+    loan INTEGER NOT NULL,
+    mortgage INTEGER NOT NULL,
+    rent INTEGER NOT NULL
+    user_id INTEGER NOT NULL
+);
+
+CREATE TABLE sellers(
+    seller_id SERIAL PRIMARY KEY,
+    username TEXT NOT NULL,
+    password TEXT NOT NULL
+)
