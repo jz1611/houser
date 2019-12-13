@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 
-const { CONNECTION_STRING, PORT, SESSION_SECRET } = process.env;
+const { CONNECTION_STRING, SERVER_PORT, SESSION_SECRET } = process.env;
 
 app.use(
   session({
@@ -35,4 +35,4 @@ app.post('/api/properties', pC.addProperty);
 app.get('/api/properties', pC.getProperties);
 app.delete('/api/properties/:id', pC.deleteProperty);
 
-app.listen(PORT, () => console.log(`Server listening on port ${PORT}...`));
+app.listen(SERVER_PORT, () => console.log(`Server listening on port ${SERVER_PORT}...`));

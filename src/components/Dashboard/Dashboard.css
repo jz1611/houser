@@ -1,0 +1,40 @@
+.dashboard {
+  height: 100vh;
+  width: 100vw;
+}
+
+.dashboard-header {
+  height: 75px;
+  width: 100vw;
+  background-color: #519872;
+}
+
+.dashboard-header > div {
+  width: 750px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dashboard-header img {
+  height: 30px;
+}
+
+.dashboard-header h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.dashboard-header h2 {
+  color: white;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.dashboard-header button {
+  justify-self: flex-end;
+}
